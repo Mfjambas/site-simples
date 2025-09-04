@@ -1,0 +1,25 @@
+boby{
+    font-family: monospace;
+}
+ul{
+    font-family: helvetica;
+}
+li {
+list-style: circle;
+}
+.list {
+list-style: square;
+}
+#msg {
+font-family: monospace;
+}
+.light-theme{
+    color: rgb(0, 0, 0);
+    background-color: rgb(205, 255, 193) ;
+}
+:root{
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+    
+}
