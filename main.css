@@ -4,6 +4,10 @@ boby{
 ul{
     font-family: helvetica;
 }
+.btn{
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
 li {
 list-style: circle;
 }
@@ -22,4 +26,13 @@ font-family: monospace;
     --white: #ffffff;
     --black: #000000;
     
+}
+.light-theme{
+--bg: var(--green);
+--fontcolor: var(--black);
+}
+
+.dark-theme{
+--bg: var(--black);
+--fontcolor: var(--green);
 }
