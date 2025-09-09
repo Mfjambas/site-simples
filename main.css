@@ -1,38 +1,41 @@
-boby{
+body {
     font-family: monospace;
 }
-ul{
-    font-family: helvetica;
+ul {
+    font-family: Helvetica, sans-serif;
 }
-.btn{
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
 }
 li {
-list-style: circle;
+    list-style-type: circle;
 }
 .list {
-list-style: square;
+    list-style-type: square;
 }
 #msg {
-font-family: monospace;
+    font-family: monospace;
 }
-.light-theme{
-    color: rgb(0, 0, 0);
-    background-color: rgb(205, 255, 193) ;
-}
-:root{
+:root {
     --green: #00FF00;
     --white: #ffffff;
     --black: #000000;
-    
+    --btnBg: #000;
+    --btnFontColor: #fff;
 }
-.light-theme{
---bg: var(--green);
---fontcolor: var(--black);
+.light-theme {
+    --bg: var(--green);
+    --fontcolor: var(--black);
 }
-
-.dark-theme{
---bg: var(--black);
---fontcolor: var(--green);
+.dark-theme {
+    --bg: var(--black);
+    --fontcolor: var(--green);
 }
