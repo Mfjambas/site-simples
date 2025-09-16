@@ -7,21 +7,21 @@ body {
     text-align: center;
 }
 
-.light-theme {
-    --bg: #dcffba;
-    --fontcolor: #012500;
-    --btnBg: #1a1600;
-    --btnFontColor: #ffffff;
+.btn-spotify{
+    --spotifyBg: #1DB954;
+    --spotifyColor: #ffffff;
 }
 
 .dark-theme {
-    --bg: #003104;
-    --fontcolor: #43e273;
-    --btnBg: #009e28;
-    --btnFontColor: #ffffff;
+    --bg: #000000;
+    --fontcolor: #f8f1f1;
+    --btnBg: #c4c4c4;
+    --btnFontColor: #222222;
+    --spotifyBg: #ffffff;
+    --spotifyColor: #000000;
 }
 
-.albuns{
+.albun{
     display: flex;
     justify-content: space-around;
     margin: 20px;
@@ -70,4 +70,62 @@ ul {
 
 ul li {
     margin: 5px 0;
+}
+
+.btn-spotify {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1DB954; /* tema claro */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre logo e texto */
+  transition: background 0.3s, color 0.3s;
+}
+
+/* diminui a imagem dentro do botão */
+.btn-spotify img.icon {
+  width: 24px;   /* largura desejada */
+  height: 24px;  /* altura desejada */
+}
+
+/* tema escuro */
+body.dark-theme .btn-spotify {
+  background-color: white;
+  color: #1DB954;
+}
+
+/* muda a imagem no tema escuro */
+body.dark-theme .btn-spotify img.icon {
+  content: url(../img/Spotify-Logo.wine.svg );
+}
+.albuns {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.album {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* deixa a imagem dentro do quadrado */
+    transition: transform 0.3s;
+    text-decoration: none; /* tira sublinhado do link */
+}
+
+.album img {
+    width: 200px;   /* largura do card */
+    height: 200px;  /* altura do card */
+    object-fit: cover; /* corta a imagem sem distorcer */
+    display: block;
+}
+
+.album:hover {
+    transform: scale(1.05); /* efeito zoom quando passa o mouse */
 }
